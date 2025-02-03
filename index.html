@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Anthology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <div id="placeholder"></div>
+        <div id="container">
+            <div id="zoomed_card_front">
+                <div id="card_border_front">
+                    <img id="disneyLogo" src="disneyLogo.png">
+                    <img id="DisneyAnthologyLogo" src="DisneyAnthologyLogo.png">
+                    <span id="shortName">Donald in Mathmagic Land</span>
+                </div>
+            </div>
+
+            <div id="zoomed_card_back" style="display: none;">
+                <div id="card_border_back">
+                    <div id="short_container">
+                        <video id="short" src="paperino_nel_mondo_della_matemagica.mp4" poster="frame.jpg"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controller">
+            <button id="turnBTN"><img src="arrow.png"><span>Gira</span></button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

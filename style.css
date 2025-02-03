@@ -1,0 +1,118 @@
+body {
+    background-image: url('background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100vw;
+    height: 100dvh;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    user-select: none;
+}
+
+#menu{
+    display: flex;
+    gap: 15px;
+}
+
+#card_border_front {
+    --width_card: 300px;
+    width: calc(var(--width_card));
+    background-image: url('border_card.png');
+    aspect-ratio: 61.8/88;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#card_border_back {
+    --width_card: 300px;
+    width: calc(var(--width_card));
+    background-image: url('back_card.png');
+    aspect-ratio: 61.8/88;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zoomed_card_front {
+    background-image: url('paperino_nel_mondo_della_matemagica.jpg');
+    width: calc(var(--width_card));
+    aspect-ratio: 61.8/88;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+#short {
+    height: 212px;
+    bottom: 34px;
+    position: relative;
+}
+
+#short_container {
+    bottom: 113px;
+    position: relative;
+    left: 3px;
+    overflow: hidden;
+    height: 165px;
+}
+
+#DisneyAnthologyLogo {
+    position: relative;
+    width: 50px;
+    bottom: 182px;
+}
+
+#disneyLogo {
+    width: 28px;
+    position: relative;
+    bottom: 181px;
+}
+
+#shortName{
+    position: relative;
+    color: #d8b746bf;
+    top: 180px;
+    width: 115px;
+    text-align: center;
+    font-size: 12px;
+    font-family: cursive;
+}
+
+#turnBTN img {width: 35px;}
+
+#turnBTN {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 0px;
+    background-color: #bdb4b45e;
+    border: none;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+    width: 75px;
+    filter: brightness(0.7);
+}
+
+#turnBTN:hover{
+    filter: brightness(1.3);
+}
+
+#placeholder {
+    width: 75px;
+}                   
+
+#controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
