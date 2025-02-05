@@ -23,13 +23,18 @@
             <div id="zoomed_card_back" style="display: none;">
                 <div id="card_border_back">
                     <div id="short_container">
-                        <video id="short" src="paperino_nel_mondo_della_matemagica.mp4" poster="frame.jpg" controls></video>
+                        <video id="short" src="paperino_nel_mondo_della_matemagica.mp4" poster="frame.jpg"></video>
                     </div>
                 </div>
             </div>
         </div>
         <div id="controller">
-            <button id="turnBTN"><img src="arrow.png"><span>Gira</span></button>
+            <button class="BTN" id="turnBTN"><img src="arrow.png"><span>Gira</span></button>
+            <button class="BTN" onclick="playPause()">Play</button>
+            <button class="BTN" onclick="document.getElementById('short').currentTime -= 5">Riavvolgi (-5s)</button>
+            <button class="BTN" onclick="document.getElementById('short').currentTime += 5">Avanti (+5s)</button>
+            <button class="BTN" onclick="document.getElementById('short').muted = true">Muto</button>
+            <button class="BTN" onclick="document.getElementById('short').muted = false">Volume</button>
         </div>
     </div>
 </body>
