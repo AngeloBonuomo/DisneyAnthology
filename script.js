@@ -1,14 +1,16 @@
 const short = document.getElementById('short');
 let isPlay = false;
-
-short.currentTime = 305;
+let firstPlay = true;
 
 function playPause() {
-    if (isPlay){
+    if (firstPlay)
+        short.currentTime = 305;
+    firstPlay = false;
+    if (isPlay) {
         short.pause();
         isPlay = false;
     }
-    else{
+    else {
         short.play();
         isPlay = true;
     }
