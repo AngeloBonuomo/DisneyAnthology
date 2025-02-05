@@ -1,3 +1,19 @@
+const short = document.getElementById('short');
+let isPlay = false;
+
+short.currentTime = 305;
+
+function playPause() {
+    if (isPlay){
+        short.pause();
+        isPlay = false;
+    }
+    else{
+        short.play();
+        isPlay = true;
+    }
+}
+
 const front_card = document.getElementById('zoomed_card_front');
 const back_card = document.getElementById('zoomed_card_back');
 let itsTurnig = false;
@@ -18,7 +34,7 @@ function handleTouchMove(event) {
 
 function applyTransform(x, y) {
     if (itsTurnig) return;
-    
+
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
     const offsetX = (x - centerX) / centerX;
