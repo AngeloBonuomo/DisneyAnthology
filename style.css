@@ -58,6 +58,12 @@ body {
     position: relative;
 }
 
+#border{
+    background-color: #245b9c;
+    width: 2px;
+    height: calc(var(--width_card) / 61.8 * 88);/*300 : 61.8 = x : 88*/
+}
+
 #short_container {
     bottom: 113px;
     position: relative;
