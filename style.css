@@ -17,7 +17,8 @@ body {
     gap: 15px;
 }
 
-#card_border_front {
+#card_border_front,
+.front{
     --width_card: 300px;
     width: calc(var(--width_card));
     background-image: url('border_card.png');
@@ -29,7 +30,8 @@ body {
     flex-direction: column;
 }
 
-#card_border_back {
+#card_border_back,
+.back{
     --width_card: 300px;
     width: calc(var(--width_card));
     background-image: url('back_card.png');
@@ -56,12 +58,6 @@ body {
     height: 214px;
     bottom: 34px;
     position: relative;
-}
-
-#border{
-    background-color: #245b9c;
-    width: 2px;
-    height: calc(var(--width_card) / 61.8 * 88);/*300 : 61.8 = x : 88*/
 }
 
 #short_container {
