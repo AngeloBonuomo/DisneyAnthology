@@ -148,6 +148,16 @@ body {
   background-size: cover
 }
 
+#front_goofy_s_glider{
+  background-image: url("front_goofy_s_glider.jpg");
+  background-size: cover
+}
+
+#back_goofy_s_glider{
+  background-image: url("back_goofy_s_glider.jpg");
+  background-size: cover
+}
+
 .card{
     --width_card: 300px;
     width: calc(var(--width_card));
