@@ -19,10 +19,10 @@ function playPause() {
 const front_card = document.getElementById('zoomed_card_front');
 const back_card = document.getElementById('zoomed_card_back');
 let itsTurnig = false;
-
+/* 
 document.addEventListener('mousemove', handleMove);
 document.addEventListener('touchmove', handleTouchMove);
-
+ */
 function handleMove(event) {
     applyTransform(event.clientX, event.clientY);
 }
