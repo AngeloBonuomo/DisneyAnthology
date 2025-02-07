@@ -17,8 +17,7 @@ body {
     gap: 15px;
 }
 
-#card_border_front,
-.front{
+#card_border_front{
     --width_card: 300px;
     width: calc(var(--width_card));
     background-image: url('border_card.png');
@@ -132,5 +131,21 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-direction: column;
+}
+
+
+#front_apprendista_stregone{
+  background-image: url("front_apprendista_stregone.jpg");
+  background-size: cover
+}
+.front{
+    --width_card: 300px;
+    width: calc(var(--width_card));
+    aspect-ratio: 61.8/88;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
