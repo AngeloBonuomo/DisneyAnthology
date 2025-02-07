@@ -2,6 +2,8 @@ body {
     background-image: url('background.png');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     width: 100vw;
     height: 100dvh;
@@ -9,6 +11,7 @@ body {
     justify-content: center;
     margin: 0;
     user-select: none;
+    overflow: auto;
 }
 
 #menu{
