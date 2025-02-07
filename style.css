@@ -158,6 +158,16 @@ body {
   background-size: cover
 }
 
+#front_the_skeleton_dance{
+  background-image: url("front_the_skeleton_dance.jpg");
+  background-size: cover
+}
+
+#back_the_skeleton_dance{
+  background-image: url("back_the_skeleton_dance.jpg");
+  background-size: cover
+}
+
 .card{
     --width_card: 300px;
     width: calc(var(--width_card));
