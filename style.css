@@ -170,7 +170,7 @@ body {
 }
 
 .card{
-    --width_card: 300px;
+    --width_card: 150px;
     width: calc(var(--width_card));
     aspect-ratio: 61.8/88;
     overflow: hidden;
@@ -178,4 +178,5 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all 0.3s ease;
 }
