@@ -10,62 +10,55 @@
 
 <body>
     <div id="menu">
-        <div id="placeholder" style="display: none;"></div>
-        <div id="apprendista_stregone">
-            <div class="card" id="front_apprendista_stregone">
-              
+        <div id="background" style="display: none;"></div>
+        <div id="the_sorcerer_s_apprentice">
+            <div id="front_the_sorcerer_s_apprentice" class="card">
+                <button class="cardBTN" onclick="select('the_sorcerer_s_apprentice')"></button>
             </div>
-           <div class="card" style="display: none" id="back_apprendista_stregone">
-             
-           </div>
+            <div id="back_the_sorcerer_s_apprentice" class="card" style="display: none;"></div>
         </div>
-        <div id="paperino_nel_mondo_della_matemagica">
-            <div id="zoomed_card_front">
-                <div id="card_border_front">
-                    <img id="disneyLogo" src="disneyLogo.png">
-                    <img id="DisneyAnthologyLogo" src="DisneyAnthologyLogo.png">
-                    <span id="shortName">MATHEMAGIC LAND</span>
+
+        <div id="mathmagic_land">
+            <div id="front_mathmagic_land" class="card">
+                <div id="card_border" class="card">
+                    <button class="cardBTN" onclick="select('mathmagic_land')"></button>
                 </div>
             </div>
-            <div id="zoomed_card_back" style="display: none;">
-                <div id="card_border_back">
-                    <div id="short_container">
-                        <video id="short" src="paperino_nel_mondo_della_matemagica.mp4" poster="frame.jpg"></video>
-                    </div>
-                </div>
+            <div id="back_card" class="card" style="display: none;">
+                <div></div>
             </div>
         </div>
-        
+
         <div id="goofy_s_glider">
-
-            <div class="card" id="front_goofy_s_glider">
-
-              
+            <div id="front_goofy_s_glider" class="card">
+                <button class="cardBTN" onclick="select('goofy_s_glider')"></button>
             </div>
-           <div class="card" style="display: none" id="back_goofy_s_glider">
-             
-           </div>
+            <div id="back_goofy_s_glider" class="card" style="display: none;"></div>
         </div>
-        
+
+        <div id="tugboat_mikey">
+            <div id="front_tugboat_mikey" class="card">
+                <button class="cardBTN" onclick="select('tugboat_mikey')"></button>
+            </div>
+            <div id="back_tugboat_mikey" class="card" style="display: none;"></div>
+        </div>
+
         <div id="the_skeleton_dance">
-
-            <div class="card" id="front_the_skeleton_dance">
-
-              
+            <div id="front_the_skeleton_dance" class="card">
+                <button class="cardBTN" onclick="select('the_skeleton_dance')"></button>
             </div>
-           <div class="card" style="display: none" id="back_the_skeleton_dance">
-             
-           </div>
+            <div id="back_the_skeleton_dance" class="card" style="display: none;"></div>
         </div>
 
-        <div id="controller" style="display: none;">
-            <button class="BTN" id="turnBTN"><img src="arrow.png"><span>Gira</span></button>
+        <!--div id="controller">
+            <button class="BTN" id="close">Chiudi</button>
+            <button class="BTN" id="turnBTN">Gira</button>
             <button class="BTN" onclick="playPause()">Play</button>
             <button class="BTN" onclick="document.getElementById('short').currentTime -= 5">Riavvolgi (-5s)</button>
             <button class="BTN" onclick="document.getElementById('short').currentTime += 5">Avanti (+5s)</button>
             <button class="BTN" onclick="document.getElementById('short').muted = true">Muto</button>
             <button class="BTN" onclick="document.getElementById('short').muted = false">Volume</button>
-        </div>
+        </div-->
     </div>
 </body>
 
