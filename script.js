@@ -19,9 +19,10 @@ function select(ID) {
             closeBTN.id = "close";
             closeBTN.classList.add("BTN");
             closeBTN.onclick = close;
-            clonedDiv.appendChild(closeBTN);
+            clonedDiv.querySelectorAll(".card")[0].appendChild(closeBTN);
             document.getElementById("background").appendChild(clonedDiv);
             selectedDIV = document.getElementById(clonedDiv.id);
+            console.log(selectedDIV);
             setTimeout(resizeCard(), 1000);
         }
     }
